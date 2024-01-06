@@ -1,0 +1,122 @@
+.container{
+display: flex;
+justify-content: space-between;
+/* border: 2px solid rgb(7, 7, 7); */
+height: 400px;
+}
+.box{
+
+    border: 2px solid black;
+    width: 150px;
+    height: 30%;
+    margin-top: 10%;
+    margin-left: 20px;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
+#bluebtn{
+
+    background-color: blue;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    margin-left: 770px;
+    width: 12%;
+    margin-bottom: 1%;
+    
+}
+
+
+
+#purplebtn{
+
+    background-color: rgb(174, 44, 165);
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px;
+
+}
+
+#greenbtn{
+
+    background-color: rgb(9, 247, 80);
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px;
+    width: 12%;
+
+}
+#orangebtn{
+
+    background-color: rgb(249, 142, 55);
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px;
+    width: 11.6%;
+}
+#redbtn{
+
+    background-color: rgb(250, 37, 37);
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px;
+    width: 7.3%;
+
+}
+#pinkbtn{
+
+    background-color: rgb(255, 0, 102);
+    color: black;
+    font-weight: bold;
+    margin-left: 300px;
+    margin-top: 2%;
+    padding: 5px;
+    width: 12%;
+
+}
+
+#yellowbtn{
+    background-color: rgb(234, 255, 5);
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px;
+}
+#chocaltebtn{
+
+    background-color: rgb(194, 116, 26);
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px;
+}
+#aqvabtn{
+
+    background-color: rgb(45, 244, 224);
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px;
+    width: 12%;
+
+}
+#greybtn{
+
+    background-color: rgb(103, 103, 105);
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px;
+    width: 11.6%;
+
+}

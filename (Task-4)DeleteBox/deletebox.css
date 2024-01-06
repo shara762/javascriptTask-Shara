@@ -1,0 +1,22 @@
+.container{
+display: flex;
+    border: 2px solid black;
+    height: 500px;
+    background-color: rgb(194, 210, 213);
+}
+
+.box{
+
+  
+    border: 2px solid red;
+    width: 120px;
+    height: 100px;
+    margin-left: 0.5%;
+    margin-top: 15%;
+}
+.head{
+    
+    text-align: center;
+    color: rgb(7, 7, 7);
+    
+}

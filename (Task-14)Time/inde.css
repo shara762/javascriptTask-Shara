@@ -1,0 +1,31 @@
+@font-face {
+  font-family: digital;
+  src: url(./Font/digital-7\ \(mono\ italic\).ttf);
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a5a8a5;
+    color: #61dafb;
+    margin: 0;
+  }
+  
+  #digital-clock {
+    font-size: 30px;
+    letter-spacing: 1px;
+    border: 2px solid rgb(95, 227, 253);
+    background-color: rgb(21, 5, 75);
+    color: #f8f8fa;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 10%;
+    width: 30%;
+    font-family: digital;
+    text-align: center;
+    padding-top: 30px;
+  }
