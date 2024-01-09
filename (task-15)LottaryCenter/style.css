@@ -1,0 +1,93 @@
+.container
+{   
+    border: 2px solid blue;
+    height: 590px;
+    background-color: #205b60;
+}
+
+#take-cash{
+
+    width:150px ;
+    height: 20px;
+    text-align: center;
+    margin-left: 520px;
+    margin-top: 40px;
+}
+#confirm-btn{
+    
+   width: 80px;
+   height: 25px;
+   margin-left: 560px;
+}
+.head{
+display: flex;
+justify-content: center;
+background: linear-gradient(to right, #35dde9, #30eb4c, #04dd50, #0fc298, #03897a);
+-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.inputbox{
+    margin-left: 20px;
+    width: 50px;
+    height: 40px;
+    margin-top: 30px;
+    
+}
+#input{
+    display: flex;
+    justify-content: center;
+    
+}
+#lotarybox{
+
+    display: flex;
+    justify-content: center;
+    margin-left: 2px;
+}
+
+#box1{
+    width: 50px;
+    height: 40px;
+}
+ #box2{
+    margin-left: 20px;
+    width: 50px;
+    height: 40px;
+}
+#box3{
+    margin-left: 20px;
+    width: 50px;
+    height: 40px;
+}
+#box4{
+    margin-left: 20px;
+    width: 50px;
+    height: 40px;
+} 
+
+#genLotary{
+
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 16px;
+}
+
+
+
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* WebKit browsers like Chrome and Safari */
+    margin: 0;
+  }
+  
+  /* For Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
