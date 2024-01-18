@@ -2,8 +2,45 @@
 {   
     border: 2px solid blue;
     height: 590px;
-    background-color: #205b60;
+    background-color: #191922;
 }
+
+#cash h2{
+
+    color: rgb(237, 238, 234);
+}
+#spinnerVideo{
+    display: flex;
+    justify-content: center;
+    margin-left: 550px;
+    width: 160px;
+    height: 160px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+#winningamt{
+    
+    color: #30eb4c;
+    margin-top: 20px;
+   
+}
+#winningamt h1{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
+#winningamt h2{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    background: linear-gradient(to right, rgb(246, 77, 209), #e87cf2, yellow, rgb(247, 100, 227), rgb(186, 69, 249));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 #take-cash{
 
@@ -16,13 +53,31 @@
 #confirm-btn{
     
    width: 80px;
-   height: 25px;
+   height: 30px;
    margin-left: 560px;
+   border:1px solid #30eb4c;
+   box-shadow: 0 1px 5px 0 rgb(158, 157, 157);
+   color: rgb(15, 15, 161);
+   font-weight: solid;
+   font-family:Arial, Helvetica, sans-serif;
 }
+
+#confirm-btn:hover{
+
+    background-color: aliceblue;
+}
+
+.box{
+
+    margin-left: 20px;
+}
+
+
 .head{
 display: flex;
 justify-content: center;
-background: linear-gradient(to right, #35dde9, #30eb4c, #04dd50, #0fc298, #03897a);
+font-style: oblique;
+background: linear-gradient(to right, rgb(134, 247, 205), #30eb4c, yellow, rgb(203, 64, 184), rgb(165, 52, 225));
 -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -32,11 +87,16 @@ background: linear-gradient(to right, #35dde9, #30eb4c, #04dd50, #0fc298, #03897
     width: 50px;
     height: 40px;
     margin-top: 30px;
+    text-align: center;
     
+}
+.box{
+    text-align: center;
 }
 #input{
     display: flex;
     justify-content: center;
+    margin-left: 110px;
     
 }
 #lotarybox{
@@ -46,25 +106,11 @@ background: linear-gradient(to right, #35dde9, #30eb4c, #04dd50, #0fc298, #03897
     margin-left: 2px;
 }
 
-#box1{
+.box{
     width: 50px;
     height: 40px;
 }
- #box2{
-    margin-left: 20px;
-    width: 50px;
-    height: 40px;
-}
-#box3{
-    margin-left: 20px;
-    width: 50px;
-    height: 40px;
-}
-#box4{
-    margin-left: 20px;
-    width: 50px;
-    height: 40px;
-} 
+
 
 #genLotary{
 
@@ -74,20 +120,49 @@ background: linear-gradient(to right, #35dde9, #30eb4c, #04dd50, #0fc298, #03897
     border-radius: 16px;
 }
 
+#genLotary:hover{
+    background-color:  #fff;
+}
+#winningamt
+{
+    display: none;
+}
 
+/* .head{
+    display: flex;
+    justify-content: center;
+    margin-left: 500px;
+    width: 290px;
+    background-color: rgb(90, 247, 215);
+    position: relative;
+    height: 100px;
+    animation-direction: alternate-reverse;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+}
+
+@keyframes example {
+    0%   {background-color:rgb(134, 247, 205); left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:rgb(203, 64, 184); left:200px; top:200px;}
+    75%  {background-color:rgb(86, 237, 86); left:0px; top:200px;}
+    100% {background-color:rgb(165, 52, 225); left:0px; top:0px;}
+  } */
+  
 
 
 input[type="number"] {
-    -moz-appearance: textfield; /* Firefox */
+    -moz-appearance: textfield; 
   }
   
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
-    -webkit-appearance: none; /* WebKit browsers like Chrome and Safari */
+    -webkit-appearance: none; 
     margin: 0;
   }
   
-  /* For Firefox */
   input[type="number"] {
     -moz-appearance: textfield;
   }

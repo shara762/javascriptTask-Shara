@@ -1,89 +1,66 @@
-var btn=document.getElementById("confirm-btn")
+var btn = document.getElementById("confirm-btn")
 // console.log(btn);
-
-var gbtn=document.getElementById("genLotary")
+var gbtn = document.getElementById("genLotary")
 // console.log(gbtn);
-var cashinput=document.getElementById("take-cash")
+var cashinput = document.getElementById("take-cash")
 // console.log(cashinput);
-var cashdisplay=document.getElementById("cash")
+var cashdisplay = document.getElementById("cash")
 
-var inputbox=document.getElementsByClassName("inputbox")
+var inputbox = document.getElementsByClassName("inputbox")
 // console.log(inputbox);
+var box = document.getElementsByClassName("box")
 
-var box1 = document.getElementById('box1');
-var box2 = document.getElementById('box2');
-var box3 = document.getElementById('box3');
-var box4 = document.getElementById('box4');
-var showgif=true;
-btn.addEventListener("click",()=>{
+var winningamt = document.getElementById("winningamt");
+// console.log(winningamt);
+gbtn.disabled = true;
 
-if(cashinput.value==""||cashinput.value<=0)
-{
-    alert("Invalid input")
-}
-else
-{
-    cashinput.style.display='none';
-    cashdisplay.innerHTML = `<center><h1>${cashinput.value}</h1></center>`
+btn.addEventListener("click", () => {
 
-}
+    if (cashinput.value == "" || cashinput.value <= 0) {
+        alert("Invalid input")
+    }
+    else {
+        cashinput.style.display = 'none';
+        cashdisplay.innerHTML = `<center><h2> Invest Amount:<i class="fa-thin fa-coins">${cashinput.value}</i></h2></center>`
+        gbtn.disabled = false;
+    }
 })
 
-gbtn.addEventListener("click",()=>{
- 
-    if(inputbox[0].value=="" ||inputbox[0].value<0||inputbox[1].value=="" ||inputbox[1].value<0||inputbox[2].value=="" ||inputbox[2].value<0||inputbox[3].value<0||inputbox[3].value=="" )
-        {
-            alert("invalid input")
+gbtn.addEventListener("click", () => {
+
+    if (cashinput.value == "") {
+        gbtn.disabled = "";
+    }
+    winningamt.style.display = 'block';
+
+    if (inputbox[0].value == "" || inputbox[0].value < 0 || inputbox[1].value == "" || inputbox[1].value < 0 || inputbox[2].value == "" || inputbox[2].value < 0 || inputbox[3].value < 0 || inputbox[3].value == "") {
+        alert("invalid input")
+    }
+    else {
+        gif.style.display = 'block';
+        for (i = 0; i < 4; i++) {
+            box[i].style.display = 'block';
         }
-    else if(showgif)
-    {
-            gif.style.display = 'block';
-            box1.style.display='block';
-            box2.style.display='block';
-            box3.style.display='block';
-            box4.style.display='block';
 
-             
+        let indexcnt = 0;
+        var shownum = setInterval(() => {
+            var c = 0;
+            num = Math.floor((Math.random() * 9))
+            // console.log(num);
+            box[indexcnt].value = num;
+
+            if (inputbox[indexcnt].value == box[indexcnt].value) {
+                cashinput.value = cashinput.value * 10;
+                winningamt.innerHTML = `<h2><i class="fa-sharp fa-light fa-indian-rupee-sign">Congratualtion You Have Won ${cashinput.value} Rupees</i></h2>`;
+            }
+            indexcnt++;
+            if (indexcnt == 4)
+                clearInterval(shownum)
+
+        }, 1000)
     }
-    else
-    {
-        // setTimeout(() => {
-
-
-        // box1.value = Math.floor(Math.random() * 9) ;
-
-        // box2.value = Math.floor(Math.random() * 9) ;
-        // box3.value = Math.floor(Math.random() * 9) ;
-        // box4.value = Math.floor(Math.random() * 9) ;
-
-
-
-        
-
-        // },100)
-        displayRandomNumbers()
-  
-     
-    }
-       
-
 })
 
-
-function displayRandomNumbers() {
-    setTimeout(function() {
-      document.getElementById('box1').value = Math.floor(Math.random() * 100);
-    }, 1000);
-    setTimeout(function() {
-      document.getElementById('box2').value = Math.floor(Math.random() * 100);
-    }, 2000);
-    setTimeout(function() {
-      document.getElementById('box3').value = Math.floor(Math.random() * 100);
-    }, 3000);
-    setTimeout(function() {
-      document.getElementById('box4').value = Math.floor(Math.random() * 100);
-    }, 4000);
-  }
 
 
 
