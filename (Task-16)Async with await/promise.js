@@ -17,7 +17,7 @@ async function DemoPromise(){
         console.log(result);
 
     demo1.innerHTML=`<h1>${result.type}</h1>`;
-    demo2.innerHTML=`<h1>${result.url}</h1>`;
+    demo2.innerHTML=`<img src="${result.avatar_url}">`
     demo3.innerHTML=`<h1>${result.bio}</h1>`;
     demo4.innerHTML=`<h1>${result.followers}</h1>`;
     demo5.innerHTML=`<h1>${result.id}</h1>`;
