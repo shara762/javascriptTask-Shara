@@ -8,7 +8,8 @@ var obj = [
       githubUrl: "https://api.github.com/users/shara762",
       mailId: "shaikhsharifa762@gmail.com",
       birthDate: "14-01-2003",
-      avatar: "https://avatars.githubusercontent.com/u/145984673?v=4"
+      avatar: "https://avatars.githubusercontent.com/u/145984673?v=4",
+      profileLink:"https://github.com/shara762"
     },
     {
       rollNo: 2,
@@ -16,10 +17,11 @@ var obj = [
       age: 21,
       gender: "female",
       favItCompany: "Talentica software ",
-      githubUrl: "https://api.github.com/users/Fara776",
+      githubUrl: "https://api.github.com/users/Fara-776",
       mailId: "farashaikh564@gmail.com",
       birthDate: "14-01-2003",
-      avatar: "https://avatars.githubusercontent.com/u/145984007?v=4"
+      avatar: "https://avatars.githubusercontent.com/u/145984007?v=4",
+      profileLink:"https://github.com/Fara-776"
   
     },
     {
@@ -31,7 +33,8 @@ var obj = [
       githubUrl: "https://api.github.com/users/PJ9172",
       mailId: "rohitjagtap5000@gmail.com",
       birthDate: "22-06-2004",
-      avatar: "https://avatars.githubusercontent.com/u/147252354?v=4"
+      avatar: "https://avatars.githubusercontent.com/u/147252354?v=4",
+      profileLink:""
   
     },
     {
@@ -43,7 +46,8 @@ var obj = [
       githubUrl: "https://api.github.com/users/Mosin-M-B",
       mailId: "mosinbalsing@gmail.com",
       birthDate: "13-03-2004",
-      avatar: "https://avatars.githubusercontent.com/u/119176708?v=4"
+      avatar: "https://avatars.githubusercontent.com/u/119176708?v=4",
+      profileLink:"https://github.com/Mosin-M-B"
   
     },
     {
@@ -55,7 +59,8 @@ var obj = [
       githubUrl: "https://api.github.com/users/ashwini6777",   
       mailId: "ashwiniyadav3703@gmail.com",
       birthDate: "29-01-2003",
-      avatar :"https://avatars.githubusercontent.com/u/147252354?v=4" 
+      avatar :"https://avatars.githubusercontent.com/u/147252354?v=4" ,
+      profileLink:"https://github.com/ashwini6777"
   
     },
     {
@@ -67,7 +72,8 @@ var obj = [
       githubUrl: "https://api.github.com/users/SH3422",   
       mailId: "sanjanahodbe@gmail.com",
       birthDate: "06-03-2004",
-      avatar :"https://avatars.githubusercontent.com/u/147395950?v=4"
+      avatar :"https://avatars.githubusercontent.com/u/147395950?v=4",
+      profileLink:""
     }
   ];
 
@@ -108,7 +114,7 @@ var obj = [
           favItCompany.textContent = 'Favorite IT Company: ' + student.favItCompany;
 
           var githubUrl = document.createElement('p');
-          githubUrl.innerHTML = `<a href="${student.githubUrl}">GitHub Profile</a>`;
+          githubUrl.innerHTML = `<a href="${student. profileLink} "Target = blank>GitHub Profile</a>`;
 
           var mailId = document.createElement('p');
           mailId.textContent = 'Mail ID: ' + student.mailId;

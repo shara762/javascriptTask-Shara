@@ -16,7 +16,7 @@ setInterval(() => {
 var currunt_time=date.toLocaleTimeString();
 // console.log(currunt_time);
 
-if (currunt_time ==='7:33:50 AM') {
+if (currunt_time ==='7:42:30 AM') {
     wishcontainer= true;
 }
 if (wishcontainer)
