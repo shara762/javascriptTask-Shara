@@ -4,7 +4,7 @@ var outputbox=document.getElementById("outputbox");
 // console.log(data);
 showData()
 function addata() {
-    console.log(inputbox.value);
+    // console.log(inputbox.value);
     if(inputbox.value=="")
     {
         alert(" there is no Element in the inputbox that's why you can't add ")
@@ -32,7 +32,7 @@ function showData() {
         data.map((element,index)=>{            
             ptag=document.createElement("p");
 
-            ptag.style.color="puple";
+            // ptag.style.color="puple";
             ptag.innerHTML=`<span>${element}<br></span>`
             outputbox.appendChild(ptag);
         })

@@ -26,7 +26,6 @@ function Manager(joblist)
         else
         {
             const err=new Error("Job is Not Available")
-            reject(err)
         }
         return(err)
 

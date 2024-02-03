@@ -8,7 +8,7 @@
 
         function submitemail() {
 
-            inputbox.value;
+            // inputbox.value;
 
             if (inputbox.value == "")
             {
